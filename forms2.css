@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <title>Css Ex</title>
+</head>
+<body>
+.heading {
+    color: rgb(105, 33, 144);
+}
+
+
+h2 {
+    color: rgb(190, 59, 196);
+    font-size: 50px;
+}
+
+#heading2 {
+ color: rgb(136, 64, 123)
+}
+
+body{
+    background-color: purple;
+}
+<style>
+
+</style>
+</body>
+</html>
