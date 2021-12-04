@@ -1,42 +1,69 @@
-body{
-    background-color: #e8e8e8;
-    font-family: myfont;
-}
-
-#GridContainer {
+#grid-con {
     display: grid;
     grid-template-areas:
-        'header header header'
-        'left main main'
-        'left main main';
+        'button button button button button'
+        'header header header header header  '
+        'tool-bar tool-bar menu menu menu'
+        'text text text text text '
+        'text text text text text '
+        'text text text text text '
 }
 
-#item1{
+#header {
     grid-area: header;
-    width:100%;
-    height:100vh;
-    background-color:White;
+    background-color: brown;
+    height: 30vh;
+    width: 100%;
+    margin: 20px;
 }
 
-#item2{
-    grid-area: left;
-    width:100%;
-    height:100vh;
-    background-color:blue;
+#tool-bar {
+    grid-area: tool-bar;
+    background-color: blue;
+    height: 30vh;
+    margin: 10px;
+    padding: 10px;
 }
 
-#item3{
-    grid-area: main;
-    width:80%;
-    height:100vh;
-    background-color:yellow;
+#menu {
+    grid-area: menu;
+    background-color: seagreen;
+    height: 20vh;
+    margin: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-       body  {
-         background-color:  lightblue;
-      
+#text {
+    grid-area: text;
+    background-color: tan;
+    height: 50vh;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+    body {
+        background-color: blue;
     }
 
-    
+    #text {
+        color: dimgrey;
+    }
+}
+
+div {
+    height: 90vh;
+    display: flex;
+}
+
+#button1 {
+    height: 30%;
+    font-size: 30px;
+    background-color: palevioletred;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 15;
+    position: relative;
+    grid-area: button;
+    justify-content: center;
+    width: 200px;
 }
